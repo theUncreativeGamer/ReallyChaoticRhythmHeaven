@@ -445,6 +445,8 @@ GameObject:
   - component: {fileID: 65291384}
   - component: {fileID: 65291386}
   - component: {fileID: 65291387}
+  - component: {fileID: 65291389}
+  - component: {fileID: 65291388}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -600,6 +602,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &65291388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65291383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b881a3acdd7b2c448b5f5ff653581ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  beatPatternData: {fileID: 0}
+--- !u!114 &65291389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65291383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3c6387fcd9c614c89cd1ea80c4f7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106857931
 GameObject:
   m_ObjectHideFlags: 0
