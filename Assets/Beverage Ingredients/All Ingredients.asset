@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57655ef589bbe6642aaebc8f324b16d8, type: 3}
+  m_Name: All Ingredients
+  m_EditorClassIdentifier: 
+  _availableLiquids:
+  - {fileID: 11400000, guid: 62d7ab3e79a6f01489852241bee37d1d, type: 2}
+  - {fileID: 11400000, guid: 8b684a3f7cdd3b1468dbdb8c42e384ed, type: 2}
+  - {fileID: 11400000, guid: 850bc7c0443469845b428ec70ef32a6a, type: 2}
+  _availableSyrups: []
+  _availableSideIngredients: []

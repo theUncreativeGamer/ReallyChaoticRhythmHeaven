@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
+  m_Name: Mint
+  m_EditorClassIdentifier: 
+  label: {fileID: 0}
+  soundCue: {fileID: 8300000, guid: 9ce1a2ce547dd6544ac34c018049364b, type: 3}
+  color: {r: 0.16517645, g: 0.78, b: 0.23552936, a: 0.8}
+  bottleColor: {r: 0.7, g: 1, b: 0.7343283, a: 0.29803923}
+  labelColor: {r: 0.695, g: 1, b: 0.71521086, a: 1}

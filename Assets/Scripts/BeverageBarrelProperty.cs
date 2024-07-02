@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeverageBarrelProperty : MonoBehaviour
+public class BeverageBarrelProperty : MonoBehaviour, IOnEnterEditMode, IHasIngredient
 {
     [SerializeField] private BaseLiquid baseLiquid;
     [SerializeField] private bool updateColors = false;
-    private Color _originalColor = Color.white;
 
     [SerializeField] private List<Renderer> mainColorRenderers = new List<Renderer>();
     [SerializeField] private List<Renderer> secondaryColorRenderers = new List<Renderer>();
@@ -14,12 +13,16 @@ public class BeverageBarrelProperty : MonoBehaviour
 
     private void OnValidate()
     {
-        if (baseLiquid != null && (updateColors || baseLiquid.Color != _originalColor))
+        if (baseLiquid != null && updateColors)
         {
             updateColors = false;
-            _originalColor = baseLiquid.Color;
             UpdateRendererColors();
         }
+    }
+
+    public void OnEnterEditMode()
+    {
+        UpdateRendererColors();
     }
 
     private void Start()
@@ -29,15 +32,15 @@ public class BeverageBarrelProperty : MonoBehaviour
 
     private void UpdateRendererColors()
     {
-        MaterialPropertyBlock mainColorProp = new MaterialPropertyBlock();
-        mainColorProp.SetColor("_Color", Color.Lerp(baseLiquid.Color, Color.gray, 0.3f));
+        MaterialPropertyBlock mainColorProp = new();
+        mainColorProp.SetColor("_Color", baseLiquid.ContainerMainColor);
         foreach (Renderer r in mainColorRenderers)
         {
             r.SetPropertyBlock(mainColorProp);
         }
 
-        MaterialPropertyBlock secondaryColorProp = new MaterialPropertyBlock();
-        secondaryColorProp.SetColor("_Color", Color.Lerp(baseLiquid.Color, Color.white, 0.6f));
+        MaterialPropertyBlock secondaryColorProp = new();
+        secondaryColorProp.SetColor("_Color", baseLiquid.ContainerSecondColor);
         foreach (Renderer r in secondaryColorRenderers)
         {
             r.SetPropertyBlock(secondaryColorProp);
@@ -45,10 +48,8 @@ public class BeverageBarrelProperty : MonoBehaviour
 
         if (liquidRenderer != null)
         {
-            MaterialPropertyBlock liquidColorProp = new MaterialPropertyBlock();
-            Color liquidColor = Color.Lerp(baseLiquid.Color, Color.white, 0.2f);
-            liquidColor.a = 0.8f;
-            liquidColorProp.SetColor("_Color", liquidColor);
+            MaterialPropertyBlock liquidColorProp = new();
+            liquidColorProp.SetColor("_Color", baseLiquid.Color);
             liquidRenderer.SetPropertyBlock(liquidColorProp, 1);
         }
 
@@ -57,5 +58,10 @@ public class BeverageBarrelProperty : MonoBehaviour
             labelRenderer.sprite = baseLiquid.Label;
         }
 
+    }
+
+    public Ingredient GetIngredient()
+    {
+        return baseLiquid;
     }
 }

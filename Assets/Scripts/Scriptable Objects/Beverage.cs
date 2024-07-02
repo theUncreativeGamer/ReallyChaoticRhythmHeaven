@@ -8,6 +8,29 @@ public class Beverage : ScriptableObject
     public List<Syrup> syrups = new List<Syrup>();
     public List<SideIngredient> sideIngredients = new List<SideIngredient>();
 
+    public bool Add(Ingredient ingredient)
+    {
+        if (ingredient is BaseLiquid)
+        {
+            baseLiquids.Add(ingredient as BaseLiquid);
+            return true;
+        }
+        else if (ingredient is Syrup)
+        {
+            syrups.Add(ingredient as Syrup);
+            return true;
+        }
+        else if (ingredient is SideIngredient)
+        {
+            sideIngredients.Add(ingredient as SideIngredient);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public static bool operator ==(Beverage lhs, Beverage rhs)
     {
         // If both are null, or both are the same instance, return true.

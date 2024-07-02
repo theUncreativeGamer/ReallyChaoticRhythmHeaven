@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="圖層 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 98.880424,39.840017 c 36.852106,51.494066 48.708456,203.617963 49.704456,241.277793 28.49708,-3.29938 92.47213,0.49452 91.67777,78.13753 -0.87302,85.33245 -0.6718,85.23674 -132.89121,89.46386 l 0.22493,23.44078 h 296.80878 l 0.2234,-23.44078 c -132.21939,-4.22712 -132.01819,-4.13141 -132.89121,-89.46386 -0.79435,-77.64301 63.18222,-81.43691 91.6793,-78.13753 0.996,-37.65983 12.85082,-189.783727 49.70294,-241.277793 z"
+       style="fill:#ebfdff;fill-opacity:1;stroke:#83c8f3;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path3"
+       sodipodi:nodetypes="ccsccccsccc" />
+    <path
+       d="m 135.72175,156.66461 c 8.75041,52.28921 12.33479,104.47595 12.86313,124.4532 18.51291,-2.14342 53.34352,0.17575 74.31732,22.32213 30.39324,6.13745 44.04219,-16.23565 70.81505,-4.66762 17.6577,-11.22823 50.83828,-19.83824 69.69939,-17.65451 0.53515,-20.23465 14.98751,-124.85283 23.98545,-177.81303 z"
+       style="fill:#f1faff;fill-opacity:1;stroke:#83c8f3;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="圖層 2"
+     style="mix-blend-mode:normal">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:128.435px;font-family:Cambria;-inkscape-font-specification:Cambria;fill:#004774;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="5.2496104"
+       y="621.19849"
+       id="text4"
+       transform="scale(1.5511288,0.64469178)"><tspan
+         sodipodi:role="line"
+         x="5.2496104"
+         y="621.19849"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';fill:#004774;fill-opacity:1;stroke:none;stroke-width:10">KALP</tspan></text>
+  </g>
+</svg>

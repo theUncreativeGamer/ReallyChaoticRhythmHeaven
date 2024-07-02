@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
+  m_Name: Caramel
+  m_EditorClassIdentifier: 
+  label: {fileID: 0}
+  soundCue: {fileID: 8300000, guid: 7ef3c8db8e3bd4645856767dbff3c8e4, type: 3}
+  color: {r: 0.73333335, g: 0.38039216, b: 0, a: 0.9490196}
+  bottleColor: {r: 0.73333335, g: 0.5921569, b: 0.5372549, a: 0.29803923}
+  labelColor: {r: 0.851, g: 0.58068234, b: 0.28934, a: 1}

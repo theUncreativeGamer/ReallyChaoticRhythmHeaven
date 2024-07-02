@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c852f5feacedb94287210f0fcbf8f56, type: 3}
+  m_Name: New Sound Cue List
+  m_EditorClassIdentifier: 
+  CueList:
+  - audioClip: {fileID: 8300000, guid: c666a27e4577051479f426b176a2ddb6, type: 3}
+    cueTime: 0
+  - audioClip: {fileID: 8300000, guid: c4ab50e1cff1d17449b586b7ee119ce7, type: 3}
+    cueTime: 1
+  - audioClip: {fileID: 8300000, guid: 7ef3c8db8e3bd4645856767dbff3c8e4, type: 3}
+    cueTime: 2
+  - audioClip: {fileID: 8300000, guid: 7f547f5f395b5fa47a9dac7abd3d72cd, type: 3}
+    cueTime: 2.5
+  - audioClip: {fileID: 8300000, guid: 5272d2ee52569d445b7ccd2128ea2d18, type: 3}
+    cueTime: 3

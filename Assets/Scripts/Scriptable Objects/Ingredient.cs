@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Ingredient : ScriptableObject, IComparable<Ingredient>
+public class Ingredient : ScriptableObject, IComparable<Ingredient>, IHasIcon
 {
     [SerializeField] protected Sprite label;
     [SerializeField] protected AudioClip soundCue;
@@ -14,5 +14,15 @@ public class Ingredient : ScriptableObject, IComparable<Ingredient>
         if (other == null) return 1;
 
         return name.CompareTo(other.name);
+    }
+
+    public Sprite GetIcon()
+    {
+        return label;
+    }
+
+    public string GetPlaceholderText()
+    {
+        return name;
     }
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
+  m_Name: Condensed Milk
+  m_EditorClassIdentifier: 
+  label: {fileID: 0}
+  soundCue: {fileID: 8300000, guid: 7f547f5f395b5fa47a9dac7abd3d72cd, type: 3}
+  color: {r: 0.9529412, g: 0.8980392, b: 0.67058825, a: 0.9490196}
+  bottleColor: {r: 1, g: 0.98055553, b: 0.9, a: 0.29803923}
+  labelColor: {r: 1, g: 1, b: 0.9, a: 1}
