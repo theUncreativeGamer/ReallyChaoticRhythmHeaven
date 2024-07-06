@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Condensed Milk
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 7f547f5f395b5fa47a9dac7abd3d72cd, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 4e5c958d8c779d14e908c7a399f7e8cd, type: 3}
   color: {r: 0.9529412, g: 0.8980392, b: 0.67058825, a: 0.9490196}
   bottleColor: {r: 1, g: 0.98055553, b: 0.9, a: 0.29803923}
-  labelColor: {r: 1, g: 1, b: 0.9, a: 1}
+  labelColor: {r: 0.6, g: 0.6, b: 0.5411765, a: 1}

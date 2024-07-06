@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Kalp
   m_EditorClassIdentifier: 
   label: {fileID: 21300000, guid: 1f454c6ccad97674593c70c42e0e18d9, type: 3}
-  soundCue: {fileID: 8300000, guid: 6995813c27684c34dab6767f8c4b1d87, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 60124529ec0a943498659a093b40d04c, type: 3}
   color: {r: 0.8726415, g: 1, b: 0.98817223, a: 0.8}
   containerMainColor: {r: 0.4, g: 0.71602297, b: 0.8, a: 0}
   containerSecondColor: {r: 0.8, g: 0.9433333, b: 1, a: 1}

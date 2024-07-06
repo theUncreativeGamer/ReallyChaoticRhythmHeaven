@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Lemon
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: a119164c15f0e1544b7e10f3467ba125, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: e250eda8a83da0145a9a6ecdf3a8d853, type: 3}
   color: {r: 0.9072391, g: 1, b: 0.6367924, a: 1}
   material: {fileID: 0}

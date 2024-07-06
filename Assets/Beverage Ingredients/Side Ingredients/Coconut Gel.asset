@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Coconut Gel
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 03e5b3cbf1b313141bf6faff1100459d, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 83689b775eda59943947f2e699f669b4, type: 3}
   color: {r: 1, g: 0.99368423, b: 0.92, a: 0.9490196}
   material: {fileID: 0}

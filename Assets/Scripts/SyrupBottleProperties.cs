@@ -1,12 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SyrupBottleProperties : MonoBehaviour, IOnEnterEditMode, IHasIngredient
 {
-    [SerializeField] private Syrup syrup;
+    [SerializeField] public Syrup syrup;
     [SerializeField] private bool updateRenderers = false;
 
     [SerializeField] private Renderer bottleRenderer = null;
-    [SerializeField] private Renderer syrupRenderer = null;
+    [SerializeField] private List<Renderer> syrupRenderers = new();
     [SerializeField] private Renderer labelRenderer = null;
     [SerializeField] private SpriteRenderer imageRenderer = null;
     [SerializeField] private TMPro.TextMeshPro placeholderText = null;
@@ -35,14 +36,24 @@ public class SyrupBottleProperties : MonoBehaviour, IOnEnterEditMode, IHasIngred
         UpdateRenderers();
     }
 
-    private void UpdateRenderers()
+    public void UpdateRenderers()
     {
+        if(syrup == null)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
+        gameObject.SetActive(true);
+
         MaterialPropertyBlock mpb = new();
         mpb.SetColor("_Color", syrup.BottleColor);
         if (bottleRenderer != null) bottleRenderer.SetPropertyBlock(mpb);
 
         mpb.SetColor("_Color", syrup.Color);
-        if (syrupRenderer != null) syrupRenderer.SetPropertyBlock(mpb);
+        if (syrupRenderers != null) 
+            foreach (Renderer renderer in syrupRenderers)
+                renderer.SetPropertyBlock(mpb);
 
         mpb.SetColor("_Color", syrup.LabelColor);
         if (labelRenderer != null) labelRenderer.SetPropertyBlock(mpb, 1);

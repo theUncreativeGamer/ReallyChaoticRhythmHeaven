@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// All the ingredients that will be available in a level.
+/// You can use it to generate a random beverage that only contains beverages in this table.
+/// </summary>
 [CreateAssetMenu(menuName = "Beverage/Available Ingredients Table")]
 public class AvailableIngredientsTable : ScriptableObject
 {
@@ -18,14 +22,14 @@ public class AvailableIngredientsTable : ScriptableObject
         Beverage newBev = ScriptableObject.CreateInstance<Beverage>();
 
         int liquidCount = Random.Range(liquidCountRange.min, liquidCountRange.max + 1);
-        int syrupCount = Random.Range(0, totalIngredientCount - liquidCount + 1);
-        int sideCount = totalIngredientCount - liquidCount - syrupCount;
-
         if (liquidCount < 1) 
         { 
             liquidCount = 1;
-            Debug.LogError("U cannot make beverage with no liquid >u>");
+            Debug.LogWarning("U cannot make beverage with no liquid >u>");
         }
+
+        int syrupCount = Random.Range(0, totalIngredientCount - liquidCount + 1);
+        int sideCount = totalIngredientCount - liquidCount - syrupCount;
 
         for(int i = 0;i< liquidCount;i++) 
         {

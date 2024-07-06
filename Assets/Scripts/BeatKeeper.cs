@@ -6,8 +6,7 @@ using UnityEngine;
 public class BeatKeeper : MonoBehaviour
 {
     [SerializeField] private AudioSource musicPlayer;
-    public float bpm;
-    public float totalBeatInMeasure = 4;
+    [SerializeField] private MusicTrack musicTrack;
     public bool useMetronome = false;
     public SoundCueList metronomeAsset;
 
@@ -18,6 +17,11 @@ public class BeatKeeper : MonoBehaviour
     private AudioSource audioSource;
     public bool IsPlayingMusic { get; private set; }
 
+    public void LoadMusicTrack(MusicTrack track)
+    {
+        musicTrack = track;
+    }
+
     public bool StartPlayingMusic()
     {
         if(IsPlayingMusic)
@@ -27,9 +31,10 @@ public class BeatKeeper : MonoBehaviour
         }
         IsPlayingMusic = true;
 
-        beatLength = 60f / bpm;
-        measureLength = beatLength * totalBeatInMeasure;
+        beatLength = 60f / musicTrack.Bpm;
+        measureLength = beatLength * musicTrack.MeasureLength;
         musicPlayer.Play();
+        BroadcastMessage("StartMeasureEvent", lastMeasure, SendMessageOptions.DontRequireReceiver);
         //SendCues(metronomeAsset);
         return true;
     }
@@ -39,11 +44,6 @@ public class BeatKeeper : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void Start()
-    {
-        
-    }
-
     private void FixedUpdate()
     {
         if (!IsPlayingMusic) return;
@@ -51,7 +51,9 @@ public class BeatKeeper : MonoBehaviour
         if(Mathf.FloorToInt(currentMeasureCount) != lastMeasure)
         {
             lastMeasure = Mathf.FloorToInt(currentMeasureCount);
-            SendCues(metronomeAsset);
+            BroadcastMessage("StartMeasureEvent", lastMeasure, SendMessageOptions.DontRequireReceiver);
+            if(useMetronome)
+                SendCues(metronomeAsset);
         }
     }
 
@@ -59,7 +61,7 @@ public class BeatKeeper : MonoBehaviour
     {
         foreach (var cue in cueList.CueList)
         {
-            StartCoroutine(PlayCue(cue.audioClip, cue.cueTime * beatLength));
+            StartCoroutine(PlayCue(cue.ingredient.GetCue(), cue.cueTime * beatLength));
         }
     }
 

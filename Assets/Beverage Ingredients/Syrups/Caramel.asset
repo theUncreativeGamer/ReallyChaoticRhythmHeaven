@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Caramel
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 7ef3c8db8e3bd4645856767dbff3c8e4, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 0a2212445b0f5ac4683158537cfc6781, type: 3}
   color: {r: 0.73333335, g: 0.38039216, b: 0, a: 0.9490196}
   bottleColor: {r: 0.73333335, g: 0.5921569, b: 0.5372549, a: 0.29803923}
   labelColor: {r: 0.851, g: 0.58068234, b: 0.28934, a: 1}

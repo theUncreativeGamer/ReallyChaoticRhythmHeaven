@@ -8,27 +8,69 @@ public class Beverage : ScriptableObject
     public List<Syrup> syrups = new List<Syrup>();
     public List<SideIngredient> sideIngredients = new List<SideIngredient>();
 
+    private int ingredientCount = 0;
+    public int IngredientCount { get => ingredientCount; }
+
     public bool Add(Ingredient ingredient)
     {
         if (ingredient is BaseLiquid)
         {
             baseLiquids.Add(ingredient as BaseLiquid);
+            ingredientCount++;
             return true;
         }
         else if (ingredient is Syrup)
         {
             syrups.Add(ingredient as Syrup);
+            ingredientCount++;
             return true;
         }
         else if (ingredient is SideIngredient)
         {
             sideIngredients.Add(ingredient as SideIngredient);
+            ingredientCount++;
             return true;
         }
         else
         {
             return false;
         }
+    }
+
+    public SoundCueList ToCueList(BeatPattern pattern)
+    {
+        if (ingredientCount != pattern.Length)
+        {
+            Debug.LogError("The ingredientCount doesn't match pattern.Length.");
+            return null;
+        }
+
+        //Debug.Log("Creating a cue list of length: " + ingredientCount);
+
+        SoundCueList result = ScriptableObject.CreateInstance<SoundCueList>();
+        int index = 0;
+
+        foreach (SideIngredient stuff in sideIngredients)
+        {
+            result.CueList.Add(new SoundCue() { cueTime = pattern[index], ingredient = stuff });
+            index++;
+        }
+
+        foreach (BaseLiquid stuff in baseLiquids)
+        {
+            result.CueList.Add(new SoundCue() { cueTime = pattern[index], ingredient = stuff });
+            index++;
+        }
+
+        foreach (Syrup stuff in syrups)
+        {
+            result.CueList.Add(new SoundCue() { cueTime = pattern[index], ingredient = stuff });
+            index++;
+        }
+
+        
+        //Debug.Log("and the cue list indeed has " + index + " elements.");
+        return result;
     }
 
     public static bool operator ==(Beverage lhs, Beverage rhs)

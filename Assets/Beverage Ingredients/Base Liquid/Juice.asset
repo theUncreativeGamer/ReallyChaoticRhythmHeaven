@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Juice
   m_EditorClassIdentifier: 
   label: {fileID: 21300000, guid: afcd49525eb617f43bcd59135d0a38a7, type: 3}
-  soundCue: {fileID: 8300000, guid: c4ab50e1cff1d17449b586b7ee119ce7, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 8b8ccc7e22a44fa42bc4d3337c71e168, type: 3}
   color: {r: 1, g: 0.8834678, b: 0, a: 0.8}
   containerMainColor: {r: 0.9, g: 0.8629412, b: 0.27, a: 1}
   containerSecondColor: {r: 0.9967949, g: 1, b: 0.75, a: 1}

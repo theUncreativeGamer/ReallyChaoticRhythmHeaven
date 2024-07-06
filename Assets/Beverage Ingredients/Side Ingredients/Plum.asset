@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Plum
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: afef878aab3ffea40953d7863e292835, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: 2b00425b48f647e4ba14c1fb0ca4677c, type: 3}
   color: {r: 0.6981132, g: 0.37151426, b: 0.2799039, a: 1}
   material: {fileID: 0}

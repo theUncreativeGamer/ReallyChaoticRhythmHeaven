@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Boba
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 5272d2ee52569d445b7ccd2128ea2d18, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: d3cbee4e8660e4247a4fc2355571d8ee, type: 3}
   color: {r: 0.2830189, g: 0.1343123, b: 0, a: 1}
   material: {fileID: 0}

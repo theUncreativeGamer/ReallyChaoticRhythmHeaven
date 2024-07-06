@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class IngredientBoxProperty : MonoBehaviour, IOnEnterEditMode, IHasIngredient
 {
-    [SerializeField] private SideIngredient sideIngredient;
+    [SerializeField] public SideIngredient sideIngredient;
     [SerializeField] private bool updateRenderers = false;
 
-    [SerializeField] private Renderer stuffRenderer;
+    [SerializeField] private List<Renderer> stuffRenderers;
     [SerializeField] private List<SpriteRenderer> labelRenderers = new();
     [SerializeField] private List<TMPro.TextMeshPro> placeholderTexts = new();
 
@@ -15,33 +15,42 @@ public class IngredientBoxProperty : MonoBehaviour, IOnEnterEditMode, IHasIngred
         if (sideIngredient != null && updateRenderers)
         {
             updateRenderers = false;
-            UpdateRendererColors();
+            UpdateRenderers();
         }
     }
 
     public void OnEnterEditMode()
     {
-        UpdateRendererColors();
+        UpdateRenderers();
     }
 
     private void Start()
     {
-        UpdateRendererColors();
+        UpdateRenderers();
     }
 
-    private void UpdateRendererColors()
+    public void UpdateRenderers()
     {
+        if (sideIngredient == null)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
+        gameObject.SetActive(true);
+
         MaterialPropertyBlock stuffProp = new();
         stuffProp.SetColor("_Color", sideIngredient.Color);
-        stuffRenderer.SetPropertyBlock(stuffProp);
+        foreach (Renderer r in stuffRenderers)
+            r.SetPropertyBlock(stuffProp);
 
-        foreach(var v in labelRenderers)
+        foreach (var v in labelRenderers)
         {
             v.sprite = sideIngredient.Label;
         }
 
-        if(sideIngredient.Label == null)
-            foreach(var v in placeholderTexts)
+        if (sideIngredient.Label == null)
+            foreach (var v in placeholderTexts)
             {
                 v.text = sideIngredient.name;
             }

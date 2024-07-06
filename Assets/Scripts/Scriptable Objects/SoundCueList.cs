@@ -4,10 +4,13 @@ using UnityEngine;
 [System.Serializable]
 public class SoundCue
 {
-    public AudioClip audioClip;
+    public Ingredient ingredient;
     public float cueTime;
 }
 
+/// <summary>
+/// A series of cues that will be played in a measure.
+/// </summary>
 [CreateAssetMenu(menuName = "Sound Cue List")]
 public class SoundCueList : ScriptableObject
 {

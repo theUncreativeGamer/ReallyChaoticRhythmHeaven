@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BeverageBarrelProperty : MonoBehaviour, IOnEnterEditMode, IHasIngredient
 {
-    [SerializeField] private BaseLiquid baseLiquid;
+    [SerializeField] public BaseLiquid baseLiquid;
     [SerializeField] private bool updateColors = false;
 
     [SerializeField] private List<Renderer> mainColorRenderers = new List<Renderer>();
@@ -16,22 +16,30 @@ public class BeverageBarrelProperty : MonoBehaviour, IOnEnterEditMode, IHasIngre
         if (baseLiquid != null && updateColors)
         {
             updateColors = false;
-            UpdateRendererColors();
+            UpdateRenderers();
         }
     }
 
     public void OnEnterEditMode()
     {
-        UpdateRendererColors();
+        UpdateRenderers();
     }
 
     private void Start()
     {
-        UpdateRendererColors();
+        UpdateRenderers();
     }
 
-    private void UpdateRendererColors()
+    public void UpdateRenderers()
     {
+        if (baseLiquid == null)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
+        gameObject.SetActive(true);
+
         MaterialPropertyBlock mainColorProp = new();
         mainColorProp.SetColor("_Color", baseLiquid.ContainerMainColor);
         foreach (Renderer r in mainColorRenderers)

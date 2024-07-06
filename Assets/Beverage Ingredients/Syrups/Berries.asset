@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Berries
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 20f464269a7c9044ea821dc41279dc23, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: ac5f03c8b1c1e2f4796d1ef4e5adca48, type: 3}
   color: {r: 0.8901961, g: 0.043137256, b: 0.36078432, a: 0.9490196}
   bottleColor: {r: 0.8901961, g: 0.043137256, b: 0.36078432, a: 0.29803923}
   labelColor: {r: 0.8, g: 0.03876653, b: 0.09650864, a: 1}

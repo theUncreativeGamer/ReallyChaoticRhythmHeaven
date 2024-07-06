@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Mint
   m_EditorClassIdentifier: 
   label: {fileID: 0}
-  soundCue: {fileID: 8300000, guid: 9ce1a2ce547dd6544ac34c018049364b, type: 3}
+  soundCues:
+  - {fileID: 8300000, guid: b11f8864ee6ac3e499f6823b3ac91ac0, type: 3}
   color: {r: 0.16517645, g: 0.78, b: 0.23552936, a: 0.8}
   bottleColor: {r: 0.7, g: 1, b: 0.7343283, a: 0.29803923}
   labelColor: {r: 0.695, g: 1, b: 0.71521086, a: 1}

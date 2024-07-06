@@ -1,6 +1,8 @@
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
 
 [InitializeOnLoad]
 public static class PlayStateNotifier
@@ -24,3 +26,4 @@ public static class PlayStateNotifier
         }
     }
 }
+#endif
