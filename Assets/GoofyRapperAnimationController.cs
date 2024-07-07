@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoofyRapperAnimationController : MonoBehaviour
+public class GoofyRapperAnimationController : MonoBehaviour, ILoadMusicTrack
 {
     private Animator m_Animator;
     private void Awake()

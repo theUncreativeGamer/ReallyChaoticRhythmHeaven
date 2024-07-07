@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="bubble.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="圖層 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g18"
+       transform="matrix(1.006579,0,0,1.006579,137.06186,140.73893)"
+       style="stroke-width:0.993466">
+      <g
+         id="g17"
+         style="stroke-width:0.993466">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:7.94771;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle15"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:7.94771;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle16"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.94771;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse16"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:7.98368;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse17"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#ff4d4d;fill-opacity:1;stroke:#ff0000;stroke-width:7.94771;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle17"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:239.167px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#ff4d4d;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="339.27466"
+       y="471.12784"
+       id="text23"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         x="339.27466"
+         y="471.12784"
+         style="stroke-width:8">E</tspan></text>
+    <g
+       id="g15"
+       transform="matrix(0.94078953,0,0,0.94078953,0.04626231,121.49791)"
+       style="stroke-width:1.06294">
+      <g
+         id="g14"
+         style="stroke-width:1.06294">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:8.50349;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle12"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:8.50349;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle13"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.50349;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse13"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:8.54198;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse14"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#c44dff;fill-opacity:1;stroke:#aa00ff;stroke-width:8.50349;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle14"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:210.833px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#c44dff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="194.86449"
+       y="426.58853"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         x="194.86449"
+         y="426.58853"
+         style="fill:#c44dff;fill-opacity:1;stroke-width:8">L</tspan></text>
+    <g
+       id="g3"
+       transform="matrix(0.87171053,0,0,0.87171053,-132.64176,-82.37648)"
+       style="stroke-width:1.14717">
+      <g
+         id="g2"
+         style="stroke-width:1.14717">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:9.17736;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path1"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:9.17736;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle1"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.17736;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path2"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:9.2189;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse2"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#ff4d4d;fill-opacity:1;stroke:#ff0000;stroke-width:9.17736;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle2"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:179.965px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#ff4d4d;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="43.687988"
+       y="195.16528"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         x="43.687988"
+         y="195.16528"
+         style="stroke-width:8">B</tspan></text>
+    <g
+       id="g6"
+       transform="translate(-26.209182,-74.864858)">
+      <g
+         id="g5">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle3"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle4"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse4"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:8.03621;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse5"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#4dff5c;fill-opacity:1;stroke:#00ff15;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle5"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:204.857px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#4dff5c;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="170.63521"
+       y="242.36887"
+       id="text21"><tspan
+         sodipodi:role="line"
+         x="170.63521"
+         y="242.36887"
+         style="fill:#4dff5c;fill-opacity:1;stroke-width:8"
+         id="tspan24">U</tspan></text>
+    <g
+       id="g9"
+       transform="matrix(1.1282895,0,0,1.1282895,92.818717,-161.81819)"
+       style="stroke-width:0.886297">
+      <g
+         id="g8"
+         style="stroke-width:0.886297">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:7.09038;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle6"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:7.09038;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle7"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.09038;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse7"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:7.12247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse8"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#c44dff;fill-opacity:1;stroke:#aa00ff;stroke-width:7.09038;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle8"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:233.529px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#c44dff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="320.87601"
+       y="197.60242"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         x="320.87601"
+         y="197.60242"
+         style="fill:#c44dff;fill-opacity:1;stroke-width:8">B</tspan></text>
+    <g
+       id="g12"
+       transform="matrix(1.0460526,0,0,1.0460526,-167.40529,126.96695)"
+       style="stroke-width:0.955977">
+      <g
+         id="g11"
+         style="stroke-width:0.955977">
+        <circle
+           style="fill:#e5e5e5;fill-opacity:1;stroke:#808080;stroke-width:7.6478;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle9"
+           cx="262.61255"
+           cy="253.16605"
+           r="95.72448" />
+        <circle
+           style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:7.6478;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="circle10"
+           cx="262.61255"
+           cy="253.16606"
+           r="86.907753" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.6478;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse10"
+           cx="304.07504"
+           cy="79.38253"
+           rx="22.488258"
+           ry="42.97261"
+           transform="rotate(30.885469)" />
+        <ellipse
+           style="fill:#e5e5e5;fill-opacity:1;stroke:none;stroke-width:7.68241;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="ellipse11"
+           cx="420.26526"
+           cy="-21.658278"
+           rx="12.426196"
+           ry="48.281307"
+           transform="matrix(0.66123022,0.75018304,-0.83191066,0.55490959,0,0)" />
+      </g>
+      <circle
+         style="mix-blend-mode:color-burn;fill:#ffff4d;fill-opacity:1;stroke:#ffff00;stroke-width:7.6478;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="circle11"
+         cx="262.61255"
+         cy="253.16605"
+         r="95.72448" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:219.433px;font-family:Calibri;-inkscape-font-specification:Calibri;mix-blend-mode:multiply;fill:#d9d941;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="43.174873"
+       y="461.11484"
+       id="text20"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="43.174873"
+         y="461.11484"
+         style="fill:#d9d941;fill-opacity:1;stroke-width:8">B</tspan></text>
+  </g>
+</svg>

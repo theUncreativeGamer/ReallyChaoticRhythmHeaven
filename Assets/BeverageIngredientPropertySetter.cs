@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BeverageIngredientPropertySetter : MonoBehaviour
+public class BeverageIngredientPropertySetter : MonoBehaviour, ILoadMusicTrack
 {
     [SerializeField] private MusicTrack musicTrack;
     [SerializeField] private BeverageBarrelProperty[] beverageBarrelProperties;

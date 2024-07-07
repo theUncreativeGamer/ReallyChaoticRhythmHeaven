@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/wip title screen.unity
+    path: Assets/Scenes/Title Screen.unity
     guid: 792ab5acb54a88c42b4efe014d6e9de9
   - enabled: 1
     path: Assets/Scenes/Beverage Stand Scene.unity

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63200896fa8f6944499c75e8ed7dc3b8, type: 3}
   m_Name: Coconut Gel
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: 2e53573df62a7f444b5075f40d7dbe82, type: 3}
   soundCues:
   - {fileID: 8300000, guid: 83689b775eda59943947f2e699f669b4, type: 3}
   color: {r: 1, g: 0.99368423, b: 0.92, a: 0.9490196}

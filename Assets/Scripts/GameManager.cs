@@ -1,7 +1,8 @@
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, ILoadMusicTrack
 {
     static public GameManager Instance { get; private set; }
 
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject shakerPrefab;
     [SerializeField] private Transform shakerStartPosition;
     [SerializeField] private Transform shakerEndPosition;
+    [SerializeField] private EndScreenDisplayer endScreenDisplayer;
 
     [Space(5)]
     public Beverage currentBeverage;
@@ -38,7 +40,7 @@ public class GameManager : MonoBehaviour
         set
         {
             score = value;
-            scoreDisplay.text = score.ToString();
+            scoreDisplay.text = score.ToString() + "$";
         }
     }
 
@@ -56,6 +58,15 @@ public class GameManager : MonoBehaviour
         currentShakerIndex = -1;
         GetComponent<BeatKeeper>().StartPlayingMusic();
         return true;
+    }
+
+    public void OnGameEnd()
+    {
+        if (score > musicTrackInfo.GetScore())
+            musicTrackInfo.SetScore(score);
+        
+        endScreenDisplayer.rank = musicTrackInfo.GetRank(score);
+        endScreenDisplayer.enabled = true;
     }
 
     public void LoadMusicTrack(MusicTrack track)
@@ -100,10 +111,6 @@ public class GameManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void Start()
-    {
-        BroadcastMessage("LoadMusicTrack", musicTrackInfo);
-    }
 
     public void StartMeasureEvent(int measure)
     {

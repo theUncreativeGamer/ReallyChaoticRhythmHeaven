@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
   m_Name: Condensed Milk
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: 789a2eccbf549c9438d1f3d15cb7cbfb, type: 3}
   soundCues:
   - {fileID: 8300000, guid: 4e5c958d8c779d14e908c7a399f7e8cd, type: 3}
   color: {r: 0.9529412, g: 0.8980392, b: 0.67058825, a: 0.9490196}
   bottleColor: {r: 1, g: 0.98055553, b: 0.9, a: 0.29803923}
-  labelColor: {r: 0.6, g: 0.6, b: 0.5411765, a: 1}
+  labelColor: {r: 1, g: 1, b: 0.9019608, a: 1}

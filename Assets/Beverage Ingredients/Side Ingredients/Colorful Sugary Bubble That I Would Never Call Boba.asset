@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63200896fa8f6944499c75e8ed7dc3b8, type: 3}
   m_Name: Colorful Sugary Bubble That I Would Never Call Boba
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: e4560d82f2fc373469d3e019c286a784, type: 3}
   soundCues:
   - {fileID: 8300000, guid: 4f4fee42ae4323949986600149b7b5ef, type: 3}
   color: {r: 0.96089387, g: 0.5, b: 1, a: 1}

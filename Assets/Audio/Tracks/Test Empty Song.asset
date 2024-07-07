@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c348a698e2017747b8fbe5702d81db6, type: 3}
+  m_Name: Test Empty Song
+  m_EditorClassIdentifier: 
+  track: {fileID: 8300000, guid: 8b8ccc7e22a44fa42bc4d3337c71e168, type: 3}
+  bpm: 160
+  measureLength: 1
+  measureCount: 1
+  dialogueAsset: {fileID: 4900000, guid: 8f8e519bfca6b644cbe46f179b63f989, type: 3}
+  maxScore: 0
+  offset: 0.1
+  availableBeatPatterns: {fileID: 11400000, guid: 786a5661626b08f4fabe532cfba7f069, type: 2}
+  availableIngredients: {fileID: 11400000, guid: 2c15fccdbae228e4c84ef5e73da8d8c8, type: 2}
+  beatPatternComplexities: 00000000
+  breakTimes: []
+  beatPatternTextAsset: {fileID: 4900000, guid: 5bc7b402cf6f72949aafa362f33bed13, type: 3}

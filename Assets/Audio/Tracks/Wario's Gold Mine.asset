@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c348a698e2017747b8fbe5702d81db6, type: 3}
+  m_Name: Wario's Gold Mine
+  m_EditorClassIdentifier: 
+  track: {fileID: 8300000, guid: 3bc0ff87a79b0424398cc79de0d621a4, type: 3}
+  bpm: 160
+  measureLength: 8
+  measureCount: 44
+  dialogueAsset: {fileID: 4900000, guid: 07f07d2db98fa8144b52bfedb25c538c, type: 3}
+  maxScore: 1360
+  offset: 0.195
+  availableBeatPatterns: {fileID: 11400000, guid: 786a5661626b08f4fabe532cfba7f069, type: 2}
+  availableIngredients: {fileID: 11400000, guid: 2c15fccdbae228e4c84ef5e73da8d8c8, type: 2}
+  beatPatternComplexities: 0000000000000000030000000300000003000000030000000400000004000000040000000400000003000000030000000300000003000000040000000400000003000000030000000300000003000000000000000000000004000000040000000400000004000000050000000500000005000000050000000400000004000000050000000500000003000000040000000300000003000000040000000500000000000000000000000000000000000000
+  breakTimes: []
+  beatPatternTextAsset: {fileID: 4900000, guid: 96170a20b4589b5409d63fc615b66655, type: 3}

@@ -54,6 +54,10 @@ public class IngredientBoxProperty : MonoBehaviour, IOnEnterEditMode, IHasIngred
             {
                 v.text = sideIngredient.name;
             }
+        else foreach (var v in placeholderTexts)
+            {
+                v.text = "";
+            }
 
     }
 

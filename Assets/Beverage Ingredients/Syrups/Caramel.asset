@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
   m_Name: Caramel
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: 42f002759665d774aa3e6676e70bcbf6, type: 3}
   soundCues:
   - {fileID: 8300000, guid: 0a2212445b0f5ac4683158537cfc6781, type: 3}
   color: {r: 0.73333335, g: 0.38039216, b: 0, a: 0.9490196}

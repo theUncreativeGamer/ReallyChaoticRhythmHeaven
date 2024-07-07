@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63200896fa8f6944499c75e8ed7dc3b8, type: 3}
   m_Name: Boba
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: f86312e7960ca3946ac52757d2e6e5c7, type: 3}
   soundCues:
   - {fileID: 8300000, guid: d3cbee4e8660e4247a4fc2355571d8ee, type: 3}
   color: {r: 0.2830189, g: 0.1343123, b: 0, a: 1}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57655ef589bbe6642aaebc8f324b16d8, type: 3}
+  m_Name: Slightly more ingredients available
+  m_EditorClassIdentifier: 
+  _availableLiquids:
+  - {fileID: 11400000, guid: 62d7ab3e79a6f01489852241bee37d1d, type: 2}
+  - {fileID: 11400000, guid: 850bc7c0443469845b428ec70ef32a6a, type: 2}
+  - {fileID: 11400000, guid: 8b684a3f7cdd3b1468dbdb8c42e384ed, type: 2}
+  _availableSyrups:
+  - {fileID: 11400000, guid: 22d5bfe2b777e60478e3b200a91942e6, type: 2}
+  - {fileID: 11400000, guid: 4b7cb876fb8b22f44b2c744e7921ca5c, type: 2}
+  - {fileID: 11400000, guid: f607de5b0f2c98e458e453cb373ac334, type: 2}
+  _availableSideIngredients:
+  - {fileID: 11400000, guid: 7bf6220eb6835b64797d0808bd759e70, type: 2}
+  - {fileID: 11400000, guid: 98821ad431a4529478d15a25dbc12a5a, type: 2}
+  - {fileID: 11400000, guid: c9d9b2af00112e746894768c22f5a685, type: 2}
+  - {fileID: 11400000, guid: 326d236c0bc730b4ea482b1ea2d8e325, type: 2}

@@ -60,7 +60,12 @@ public class SyrupBottleProperties : MonoBehaviour, IOnEnterEditMode, IHasIngred
 
         if (imageRenderer != null) imageRenderer.sprite = syrup.Label;
 
-        if (syrup.Label == null && placeholderText != null)
-            placeholderText.text = syrup.name;
+        if (placeholderText != null)
+        {
+            if (syrup.Label == null)
+                placeholderText.text = syrup.name;
+            else
+                placeholderText.text = "";
+        }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
   m_Name: Berries
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: c0798831f35a9a64b8f1c1f013e6dad0, type: 3}
   soundCues:
   - {fileID: 8300000, guid: ac5f03c8b1c1e2f4796d1ef4e5adca48, type: 3}
   color: {r: 0.8901961, g: 0.043137256, b: 0.36078432, a: 0.9490196}

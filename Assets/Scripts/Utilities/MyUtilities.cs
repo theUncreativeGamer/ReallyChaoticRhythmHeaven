@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Mathematics;
-using UnityEngine;
 
 public static class MyUtilities
 {
@@ -59,3 +57,19 @@ public struct Range<T> where T : struct, IComparable<T>
     }
 }
 
+[System.Serializable]
+public class Pair<T, U>
+{
+    public Pair()
+    {
+    }
+
+    public Pair(T first, U second)
+    {
+        this.First = first;
+        this.Second = second;
+    }
+
+    public T First;
+    public U Second;
+};

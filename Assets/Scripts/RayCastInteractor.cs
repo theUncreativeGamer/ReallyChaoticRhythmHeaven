@@ -3,6 +3,7 @@ using UnityEngine;
 public class RayCastInteractor : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private LayerMask layerMask;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class RayCastInteractor : MonoBehaviour
     {
         Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit, 10, layerMask))
         {
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
             interactable?.Interact();

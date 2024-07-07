@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459aff4560ba8de44afda7c2fdb18876, type: 3}
   m_Name: Mint
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
+  label: {fileID: 21300000, guid: b1a341c77574b3d43b6147cc8727de53, type: 3}
   soundCues:
   - {fileID: 8300000, guid: b11f8864ee6ac3e499f6823b3ac91ac0, type: 3}
   color: {r: 0.16517645, g: 0.78, b: 0.23552936, a: 0.8}

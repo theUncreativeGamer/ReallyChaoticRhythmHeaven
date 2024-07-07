@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BeatKeeper : MonoBehaviour
+public class BeatKeeper : MonoBehaviour, ILoadMusicTrack
 {
     [SerializeField] private AudioSource musicPlayer;
     [SerializeField] private MusicTrack musicTrack;
+    /// <summary>
+    /// In case if the song doesn't start from 0:00, the triggered time of the StartMeasureEvent is moved by this value seconds.
+    /// </summary>
+    [SerializeField] private float offset = 0;
     public bool useMetronome = false;
     public SoundCueList metronomeAsset;
 
     [Header("Debug Don't Edit")]
     [SerializeField] private float beatLength;
     [SerializeField] private float measureLength;
-    [SerializeField] private int lastMeasure = 0;
+    [SerializeField] private int lastMeasure = -1;
+    [SerializeField] private float totalBreakTime = 0;
+    [SerializeField] private int nextBreakIndex = 0;
     private AudioSource audioSource;
     public bool IsPlayingMusic { get; private set; }
 
     public void LoadMusicTrack(MusicTrack track)
     {
         musicTrack = track;
+        musicPlayer.clip = track.Track;
+
+        beatLength = 60f / musicTrack.Bpm;
+        measureLength = beatLength * musicTrack.MeasureLength;
+        offset = track.Offset;
     }
 
     public bool StartPlayingMusic()
@@ -31,10 +42,8 @@ public class BeatKeeper : MonoBehaviour
         }
         IsPlayingMusic = true;
 
-        beatLength = 60f / musicTrack.Bpm;
-        measureLength = beatLength * musicTrack.MeasureLength;
         musicPlayer.Play();
-        BroadcastMessage("StartMeasureEvent", lastMeasure, SendMessageOptions.DontRequireReceiver);
+        //BroadcastMessage("StartMeasureEvent", lastMeasure, SendMessageOptions.DontRequireReceiver);
         //SendCues(metronomeAsset);
         return true;
     }
@@ -47,10 +56,24 @@ public class BeatKeeper : MonoBehaviour
     private void FixedUpdate()
     {
         if (!IsPlayingMusic) return;
-        float currentMeasureCount = musicPlayer.timeSamples / (musicPlayer.clip.frequency * measureLength);
-        if(Mathf.FloorToInt(currentMeasureCount) != lastMeasure)
+
+        if(!musicPlayer.isPlaying ) 
+        {
+            IsPlayingMusic=false;
+            GameManager.Instance.OnGameEnd();
+            return;
+        }
+
+        float currentMeasureCount = ((float)musicPlayer.timeSamples / musicPlayer.clip.frequency - offset - totalBreakTime) / measureLength;
+        
+        if (Mathf.FloorToInt(currentMeasureCount) > lastMeasure)
         {
             lastMeasure = Mathf.FloorToInt(currentMeasureCount);
+            if (nextBreakIndex < musicTrack.BreakTimes.Length && Mathf.FloorToInt(currentMeasureCount) == musicTrack.BreakTimes[nextBreakIndex].First)
+            {
+                totalBreakTime += musicTrack.BreakTimes[nextBreakIndex].Second * (60f / musicTrack.Bpm);
+                nextBreakIndex++;
+            }
             BroadcastMessage("StartMeasureEvent", lastMeasure, SendMessageOptions.DontRequireReceiver);
             if(useMetronome)
                 SendCues(metronomeAsset);

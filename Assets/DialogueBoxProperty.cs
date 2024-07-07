@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class DialogueBoxProperty : MonoBehaviour
+public class DialogueBoxProperty : MonoBehaviour, ILoadMusicTrack
 {
     public List<string> dialogues = new();
     public TMPro.TextMeshProUGUI dialogueTextBox;
@@ -12,7 +13,6 @@ public class DialogueBoxProperty : MonoBehaviour
 
     private void Start()
     {
-        dialogueTextBox.text = dialogues[0];
     }
 
     public void ContinueDialogue()
@@ -27,5 +27,12 @@ public class DialogueBoxProperty : MonoBehaviour
             foreach (GameObject go in stuffsToActive) { go.SetActive(true); }
             foreach (GameObject go in stuffsToInactive) { go.SetActive(false); }
         }
+    }
+
+    public void LoadMusicTrack(MusicTrack track)
+    {
+        dialogues = track.DialogueAsset.text.Split('\n').ToList();
+        dialogueTextBox.text = dialogues[0];
+        gameObject.SetActive(true);
     }
 }
